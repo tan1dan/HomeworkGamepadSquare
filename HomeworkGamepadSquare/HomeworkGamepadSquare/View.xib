@@ -8,70 +8,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="View" customModule="HomeworkGamepad" customModuleProvider="target">
-            <connections>
-                <outlet property="buttonDown" destination="7B5-8C-aGr" id="0Ia-O4-sln"/>
-                <outlet property="buttonLeft" destination="Tfl-dz-Oev" id="D3o-jb-9pL"/>
-                <outlet property="buttonRight" destination="eKs-Ii-QAP" id="I1Y-mr-3pt"/>
-                <outlet property="buttonUp" destination="txa-F9-M3V" id="qds-y4-J2k"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="View" customModule="HomeworkGamepadSquare" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="365" height="296"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="View" customModule="HomeworkGamepadSquare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="478" height="412"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txa-F9-M3V" userLabel="Up">
-                    <rect key="frame" x="119.33333333333331" y="71.666666666666671" width="126" height="34.333333333333329"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                </button>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="126" translatesAutoresizingMaskIntoConstraints="NO" id="q4k-Fn-px9">
-                    <rect key="frame" x="0.0" y="131" width="364.66666666666669" height="34.333333333333343"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfl-dz-Oev" userLabel="Left">
-                            <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="34.333333333333336"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKs-Ii-QAP" userLabel="Right">
-                            <rect key="frame" x="245.33333333333334" y="0.0" width="119.33333333333334" height="34.333333333333336"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                        </button>
-                    </subviews>
-                    <constraints>
-                        <constraint firstAttribute="bottom" secondItem="eKs-Ii-QAP" secondAttribute="bottom" id="j0u-6T-kIh"/>
-                        <constraint firstAttribute="bottom" secondItem="Tfl-dz-Oev" secondAttribute="bottom" id="kzY-Ya-uwB"/>
-                        <constraint firstItem="eKs-Ii-QAP" firstAttribute="top" secondItem="q4k-Fn-px9" secondAttribute="top" id="lhs-iK-aqv"/>
-                        <constraint firstItem="Tfl-dz-Oev" firstAttribute="top" secondItem="q4k-Fn-px9" secondAttribute="top" id="tL0-l6-IhV"/>
-                    </constraints>
-                </stackView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7B5-8C-aGr" userLabel="Down">
-                    <rect key="frame" x="119.33333333333331" y="190.33333333333334" width="126" height="34.333333333333343"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                </button>
-            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="q4k-Fn-px9" secondAttribute="trailing" id="3vQ-aN-1YC"/>
-                <constraint firstItem="q4k-Fn-px9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7Fz-hk-9W3"/>
-                <constraint firstItem="eKs-Ii-QAP" firstAttribute="leading" secondItem="txa-F9-M3V" secondAttribute="trailing" id="Hh9-gs-Qb7"/>
-                <constraint firstItem="7B5-8C-aGr" firstAttribute="top" secondItem="q4k-Fn-px9" secondAttribute="bottom" constant="25" id="Tb4-Ib-7g2"/>
-                <constraint firstItem="7B5-8C-aGr" firstAttribute="width" secondItem="Tfl-dz-Oev" secondAttribute="width" multiplier="1.05587" id="V4M-TF-epG"/>
-                <constraint firstItem="q4k-Fn-px9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VTC-8D-B7W"/>
-                <constraint firstItem="eKs-Ii-QAP" firstAttribute="leading" secondItem="7B5-8C-aGr" secondAttribute="trailing" constant="-2.8421709430404007e-14" id="f6P-Tg-GKV"/>
-                <constraint firstItem="q4k-Fn-px9" firstAttribute="top" secondItem="txa-F9-M3V" secondAttribute="bottom" constant="25" id="keV-Y0-xRD"/>
-                <constraint firstItem="eKs-Ii-QAP" firstAttribute="width" secondItem="txa-F9-M3V" secondAttribute="width" multiplier="0.94709" id="mFW-Ub-66o"/>
-                <constraint firstItem="txa-F9-M3V" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qhO-LF-6ed"/>
-                <constraint firstItem="7B5-8C-aGr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qw3-g4-2Yj"/>
-                <constraint firstItem="7B5-8C-aGr" firstAttribute="leading" secondItem="Tfl-dz-Oev" secondAttribute="trailing" id="xw5-oU-hgU"/>
-                <constraint firstItem="txa-F9-M3V" firstAttribute="leading" secondItem="Tfl-dz-Oev" secondAttribute="trailing" constant="1.4210854715202004e-14" id="yJU-Rj-z7c"/>
-            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="150.38167938931298" y="214.78873239436621"/>
+            <point key="canvasLocation" x="236.64122137404578" y="561.26760563380287"/>
         </view>
     </objects>
     <resources>

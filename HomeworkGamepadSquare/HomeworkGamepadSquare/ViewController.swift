@@ -18,11 +18,12 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             //Constraints customView
             customView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            customView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             customView.widthAnchor.constraint(equalTo: customView.heightAnchor, multiplier: 1),
-            customView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            customView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            customView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
+            customView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100),
+            customView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 10)
         ])
+        
         customView.buttonUpClosure = {
             print("Button Up was Tapped")
         }
